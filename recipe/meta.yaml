@@ -20,6 +20,11 @@ source:
     - patches/0004-enable-redefinition-allowed.patch
     # LLVM_REQUIES_EH
     - patches/0005-Set-LLVM_REQUIRES_EH-for-Cling.patch
+    # backport some relevant commits for aarch, see https://github.com/root-project/cling/issues/550
+    # https://github.com/root-project/cling/commit/e129657b8e7ee175b5df29751fc7eec064492ef9
+    - patches/0006-Fix-weak-hidden-symbols-on-AArch64.patch
+    # https://github.com/root-project/cling/commit/1b1f9296ae7873582c2aae21c6398d9dcfa960e2
+    - patches/0007-Enable-JITLink-by-default-for-AArch64-on-Linux.patch
 
 build:
   number: {{ build_number }}

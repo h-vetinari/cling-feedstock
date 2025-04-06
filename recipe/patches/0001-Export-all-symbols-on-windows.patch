@@ -1,7 +1,7 @@
-From ed7f5b0f1e8c1732ca1f4f90badfb3b428103284 Mon Sep 17 00:00:00 2001
+From c1788189326fbaf678b4a199d56fd0146884c54c Mon Sep 17 00:00:00 2001
 From: Sylvain Corlay <sylvain.corlay@gmail.com>
 Date: Fri, 6 Dec 2019 17:04:40 +0100
-Subject: [PATCH 1/5] Export all symbols on windows
+Subject: [PATCH 1/7] Export all symbols on windows
 
 ---
  tools/libcling/CMakeLists.txt | 4 ++++

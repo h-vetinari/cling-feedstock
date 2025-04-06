@@ -1,14 +1,14 @@
-From 56231e739895a3fa996850cdbe2c0ff2d2f751d0 Mon Sep 17 00:00:00 2001
+From 1fdac5afc7a923aa93e3e95b5bf6d83d671a7c99 Mon Sep 17 00:00:00 2001
 From: Sylvain Corlay <sylvain.corlay@gmail.com>
 Date: Fri, 6 Dec 2019 18:57:22 +0100
-Subject: [PATCH 3/5] Drop compile-time sysroot
+Subject: [PATCH 3/7] Drop compile-time sysroot
 
 ---
  lib/Interpreter/CIFactory.cpp | 4 ----
  1 file changed, 4 deletions(-)
 
 diff --git a/lib/Interpreter/CIFactory.cpp b/lib/Interpreter/CIFactory.cpp
-index 385c0368..05776f29 100644
+index aabb4d81..9e8758d2 100644
 --- a/lib/Interpreter/CIFactory.cpp
 +++ b/lib/Interpreter/CIFactory.cpp
 @@ -344,10 +344,6 @@ namespace {
